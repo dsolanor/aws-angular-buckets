@@ -1,0 +1,8 @@
+<div class="container">
+	<div class="jumbotron text-center">
+		<h3>Bucket: {{bucket.Name}} </h3>
+	</div>
+	<ul ng-repeat="content in files">
+		<li><a href="{{ content.Key }}">{{ content.Key }}</a></li>
+	</ul>
+</div>

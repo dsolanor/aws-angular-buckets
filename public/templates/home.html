@@ -1,0 +1,8 @@
+<div class="container">
+	<div class="jumbotron text-center">
+		<h3>Hi {{buckets.Owner.DisplayName}} you have <span class="label label-info">{{ buckets.Buckets.length }}</span></h3>
+	</div>
+	<ul ng-repeat="bucket in buckets.Buckets">
+		<li><a href="#bucket/{{ bucket.Name }}">{{ bucket.Name }}</a></li>
+	</ul>
+</div>
